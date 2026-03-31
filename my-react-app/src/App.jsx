@@ -4,19 +4,27 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
+  function callfun(){
+    alert("function call")
+  }
+  function callapple(){
+    alert("click apple button")
+  }
+  function callbanana(){
+    alert("clicl banana button")
+  }
 
   return (
     <div>
-    <h1>MY NAME MOHAMMAD ANAS{employe()}</h1>
-    <h1>ucer</h1>
+      
+<button onClick={callfun}>ok</button>
+<button onClick={callapple}>apple</button>
+<button onClick={callbanana}>banana</button>
+    <h1>welcome in new project</h1>
+  
     </div>
    
-  )
-}
-function employe(){
-  return(
-    <h1>mohd anas</h1>
   )
 }
 
