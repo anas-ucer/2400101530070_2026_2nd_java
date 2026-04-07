@@ -5,28 +5,29 @@ import './App.css'
 
 function App() {
  
-  function callfun(){
-    alert("function call")
+  let data = "Demo"
+  function updata(){
+    data = "example"
+    alert(data)
   }
-  function callapple(){
-    alert("click apple button")
-  }
-  function callbanana(){
-    alert("clicl banana button")
-  }
-
-  return (
-    <div>
-      
-<button onClick={callfun}>ok</button>
-<button onClick={callapple}>apple</button>
-<button onClick={callbanana}>banana</button>
-    <h1>welcome in new project</h1>
   
-    </div>
-   
-  )
+return(
+  <div>
+    <h1>example of arrow</h1>
+    <h1>{data}</h1>
+    <button onClick={updata}>click to update</button>
+</div>
+)
 }
+
+  
+
+    
+    
+    
+   
+  
+
 
 
 
