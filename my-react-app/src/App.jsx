@@ -5,30 +5,18 @@ import './App.css'
 
 function App() {
  
-  let data = "Demo"
-  function updata(){
-    data = "example"
-    alert(data)
-  }
-  
+const [isToggled, setIsToggled] = useState(false);
+const handClick = () => {
+setIsToggled(!isToggled);
+};
 return(
-  <div>
-    <h1>example of arrow</h1>
-    <h1>{data}</h1>
-    <button onClick={updata}>click to update</button>
-</div>
+  <>
+  <h1>example of arrow</h1>
+  <button onclick={handleClick}>
+  {isToggled ? 'ON'  :  'OFF'}
+  </button>
+</>
 )
 }
-
-  
-
-    
-    
-    
-   
-  
-
-
-
 
 export default App
