@@ -2,6 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ShowHide from './viva2'
+import Counter from './viv'
+import TextInput from './viva3' 
+import LikeButton from './v5'
+
+
 
 function App(){
   const [isOn, setIsOn] = useState(false);
@@ -11,8 +17,9 @@ function App(){
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '20px' }}>
-      {/* Displaying the present state */}
+    <div>
+     {/* style={{ textAlign: 'center', marginTop: '20px' }} */}
+      {/* Displaying the present state
       <h3>The current state is: {isOn ? "ON" : "OFF"}</h3>
 
       <button 
@@ -25,7 +32,13 @@ function App(){
         }}
       >
         Click to Toggle
-      </button>
+      </button> */}
+
+
+      {<Counter />}
+      {<ShowHide />}
+      {<TextInput />}
+      {<LikeButton />}
     </div>
   );
 }
